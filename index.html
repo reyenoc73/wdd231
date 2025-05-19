@@ -5,20 +5,21 @@
   <meta charset="UTF-8" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <meta name="description" content="Enoc C. Reyes's web development course work and certificate page." >
-  <title>Enoc C. Reyes</title>
-  <link rel="stylesheet" href="styles/css">
-  <script src="scripts/courses.js" defer></script>
+  <title>Course Home Page - WDD 231</title>
+  <meta name="author" content="Enoc C Reyes">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/toggleMenu.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/credits.js" defer></script>
-  
-  
+  <script src="scripts/courses.js" defer></script>
+  <script src="scripts/tcredits.js" defer></script>
+  <script src="scripts/display.js" defer></script>
 </head>
 <body>
   <header>
     <div class="header-content">
       <img src="images/perfil.jpg" alt="Enoc C. Reyes"  class="profile-pic" >
-      <h1>Enoc C. Reyes</h1>
+      <span class="name">Enoc C. Reyes</span>
       <button class="menu-toggle">☰</button>
     </div>
     <br>
@@ -34,10 +35,10 @@
   </header>
 
   <main>
-    <h2>Home</h2>
+    <h1>Home</h1>
     <section class="cards">
       <div class="card">
-        <h3>Course Work</h3>
+        <h2>Course Work</h2>
         <ul>
           <li></li>
           <li></li>
@@ -45,7 +46,7 @@
         </ul>
       </div>
       <div class="card">
-        <h3>Oaxaca, Mexico</h3>
+        <h2>Oaxaca, Mexico</h2>
         <img src="images/OaxacaMex.jpg" alt="Scenic view of Oaxaca Mexico">
         <p class="caption">Andador Turistico</p>
       </div>
@@ -54,35 +55,20 @@
     <section class="certificate">
       <h2>Web and Computer Programming Certificate</h2>
       <div class="filters">
-        <button onclick="filterCourses('all')">All</button>
-        <button onclick="filterCourses('cse')">CSE</button>
-        <button onclick="filterCourses('wdd')">WDD</button>
+        <button onclick="displayCourses('all')">All</button>
+        <button onclick="displayCourses('CSE')">CSE</button>
+        <button onclick="displayCourses('WDD')">WDD</button>
+        <div id="courses-container"></div>
+        <p id="credit-count">Total Credits: 0</p>
       </div>
-      <div class="courses">
-        <button class="course cse">CSE 110</button>
-        <button class="course wdd">WDD 130</button>
-        <button class="course cse">CSE 111</button>
-        <button class="course cse">CSE 210</button>
-        <button class="course wdd">WDD 131</button>
-        <button class="course wdd">WDD 231</button>
-      </div>
-      <br> 
-      <ul id="course-list">
-        <li><input type="checkbox" value="2"> CSE 110 (2 credits)</li>
-        <li><input type="checkbox" value="2"> WDD 130 (2 credits)</li>
-        <li><input type="checkbox" value="2"> CSE 111 (2 credits)</li>
-        <li><input type="checkbox" value="2"> CSE 210 (2 credits)</li>
-        <li><input type="checkbox" value="2"> WDD 131 (2 credits)</li>
-        <li><input type="checkbox" value="2"> WDD 231 (2 credits)</li>
-      </ul>
-      <br>
-      <p>Total Credits: <span id="total-credits">0</span></p>
-
+    
+    <br>
+    
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Enoc Reyes | Oaxaca Mexico
+    <p>&copy; <span id="currentyear"></span> Enoc Reyes | Oaxaca Mexico
     <img src="images/banderamexico.jpg" alt="Mexico Flag" class="flag">
     </p>
     <p id="lastModified"></p>

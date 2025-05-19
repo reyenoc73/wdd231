@@ -1,0 +1,47 @@
+
+    @media screen and (max-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .menu {
+        display: none;
+      }
+      .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: 10px;
+      }
+      nav.menu {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        position: relative;
+      }
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+      }
+      .name {
+        font-size: 20px; 
+        white-space: nowrap; 
+        overflow: hidden;
+      }
+      #courses-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 10px;
+      }
+      .course-card {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+      }
+  
+    }

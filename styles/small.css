@@ -28,10 +28,11 @@
       align-items: center;
       width: 100%;
     }
-    .header-content h1 {
-      font-size: 35px; 
+    .name {
+      font-size: 30px;
       white-space: nowrap;
       overflow: hidden;
+      margin-top: 20px;
     }
     .profile-pic {
       width: 80px;
@@ -65,9 +66,9 @@
      
     }
     .menu a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
     }
 
     .menu li a.active, .menu li a:hover {
@@ -98,7 +99,7 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
       padding: 1rem;
     }
-    .card h3 {
+    .card h2 {
       background-color: #1f4e69;
       color: white;
       padding: 0.5rem;
@@ -134,35 +135,37 @@
       border-radius: 4px;
       cursor: pointer;
     }
-    .courses {
+    #courses-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 0.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+      gap: 20px; 
+      padding: 20px;
     }
-    .course {
-      padding: 0.75rem;
-      border: none;
-      border-radius: 4px;
+    .course-card {
+      padding: 15px;
+      border: 1px solid #ccc;
+      margin: 15px;
+      background-color:  #eee;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%; 
+    }
+
+    .completed {
+        background-color: lightblue;
+        font-weight: bold;
+        border: 2px solid #27ae60;
+    }
+
+    #credit-count {
+      background-color: black;
       color: white;
-      font-weight: bold;
-    }
-    .course.cse {
-      background-color: #7f3f3f;
-    }
-    .course.wdd {
-      background-color: #7f3f3f;
-    }
-    .course.cse:nth-of-type(4) {
-      background-color: #eee;
-      color: #000;
-    }
-    .course.wdd:nth-of-type(5) {
-      background-color: #eee;
-      color: #000;
-    }
-    .course.wdd:nth-of-type(6) {
-      background-color: #eee;
-      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      border-radius: 4px;
+      cursor: pointer;
     }
     footer {
       background-color: #1f4e69;
@@ -198,47 +201,8 @@
       border-radius: 4px;
       padding: .3rem;
     }
-
-    @media screen and (max-width: 768px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-      .menu {
-        display: none;
-      }
-      .menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .menu-toggle {
-        display: block;
-        position: absolute;
-        top: 1px;
-        right: 10px;
-      }
-      nav.menu {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        margin: 0;
-        position: relative;
-      }
-      .menu.active {
-        display: flex;
-        flex-direction: column;
-      }
-      .header-content h1 {
-        font-size: 20px; 
-        white-space: nowrap; 
-        overflow: hidden;
-      }
-     
    
 
-  
-    }
 
 
   
