@@ -2,14 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <meta name="description" content="Enoc C. Reyes's web development course work and certificate page." >
-  <title>Course Home Page - WDD 231</title>
-  <meta name="author" content="Enoc C Reyes">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Home Page - Enoc C. Reyes - WDD 231</title>
+  <meta name="description" content="WDD 231 - Web Frontend Development course by Enoc C. Reyes. Explore coursework, projects, and certification details.">
+  <meta name="author" content="Enoc C. Reyes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/toggleMenu.js" defer></script>
+  <script src="scripts/togglemenu.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/courses.js" defer></script>
   <script src="scripts/tcredits.js" defer></script>
@@ -18,7 +21,7 @@
 <body>
   <header>
     <div class="header-content">
-      <img src="images/perfil.JPG" alt="Enoc C. Reyes"  class="profile-pic" >
+      <img src="images/fotoprofile.jpg" alt="Enoc C. Reyes"  class="profile-pic" >
       <span class="name">Enoc C. Reyes</span>
       <button class="menu-toggle">☰</button>
     </div>
@@ -35,7 +38,7 @@
   </header>
 
   <main>
-    <h1>Home</h1>
+    <h1>Course Home Page - WDD 231</h1>
     <section class="cards">
       <div class="card">
         <h2>Course Work</h2>
@@ -47,7 +50,7 @@
       </div>
       <div class="card">
         <h2>Oaxaca, Mexico</h2>
-        <img src="images/OaxacaMex.jpg" alt="Scenic view of Oaxaca Mexico">
+        <img src="images/oaxacamex.jpg" alt="Scenic View of Oaxaca Mexico">
         <p class="caption">Andador Turistico</p>
       </div>
     </section>
@@ -59,11 +62,12 @@
         <button onclick="displayCourses('CSE')">CSE</button>
         <button onclick="displayCourses('WDD')">WDD</button>
         <div id="courses-container"></div>
-        <p id="credit-count">Total Credits: 0</p>
-      </div>
-    
-    <br>
-    
+      </div>  
+    <br>  
+    </section>
+    <section class="credits">
+      <h2>Credits</h2>
+      <p id="credit-count">Total Credits: 0</p>
     </section>
   </main>
 
