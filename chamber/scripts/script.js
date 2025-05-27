@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("membersContainer");
+  const container = document.querySelector("membersContainer");
   const gridViewBtn = document.getElementById("gridView");
   const listViewBtn = document.getElementById("listView");
 
