@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Oaxaca Coffee Roasters",
+    "sector": "Food & Beverage",
+    "address": "Av. Universidad 123, Oaxaca de Juárez",
+    "phone": "+52 951 123 4567",
+    "website": "https://oaxacacoffee.mx"
+  },
+  {
+    "name": "Monte Albán Crafts",
+    "sector": "Arts & Crafts",
+    "address": "Calle de los Artesanos 45, Santa María Atzompa",
+    "phone": "+52 951 765 4321",
+    "website": "https://montealbancrafts.com"
+  },
+  {
+    "name": "Zapoteca Tech Solutions",
+    "sector": "Technology",
+    "address": "Tecnológico #10, Oaxaca Centro",
+    "phone": "+52 951 876 5432",
+    "website": "https://zapotecatech.mx"
+  },
+  {
+    "name": "Mezcal Real del Sur",
+    "sector": "Beverages",
+    "address": "Carretera a Zaachila km 5, San Bartolo Coyotepec",
+    "phone": "+52 951 234 5678",
+    "website": "https://mezcalreal.mx"
+  },
+  {
+    "name": "EcoTours Oaxaca",
+    "sector": "Tourism",
+    "address": "Calle Turismo 100, Oaxaca de Juárez",
+    "phone": "+52 951 567 8910",
+    "website": "https://ecotoursoaxaca.com"
+  },
+  {
+    "name": "Oaxaquita Bakery",
+    "sector": "Bakery",
+    "address": "Panaderos 88, Xoxocotlán",
+    "phone": "+52 951 234 8765",
+    "website": "https://oaxaquita.mx"
+  },
+  {
+    "name": "Flor de Piña Moda",
+    "sector": "Fashion",
+    "address": "Moda 15, Teotitlán del Valle",
+    "phone": "+52 951 111 2222",
+    "website": "https://flordepina.mx"
+  }
+]
