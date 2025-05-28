@@ -95,32 +95,42 @@ nav {
     position: relative;
     text-align: center;
     color: white;
+    overflow: hidden;
     }
 
 .hero img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    display: block;
     }
 
-.hero-text {
+.hero-content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 77, 64, 0.7);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
     }
-
+.hero-content h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    }
+.hero-content p {
+    margin-bottom: 1rem;
+    font-size: 1 rem;
+    }
 .cta-button {
+    display: inline-block;
     background: white;
     color: #004d40;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
     margin-top: 1rem;
     }
 
