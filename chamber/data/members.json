@@ -4,7 +4,9 @@
     "sector": "Food & Beverage",
     "address": "Av. Universidad 123, Oaxaca de Juárez",
     "phone": "+52 951 123 4567",
-    "website": "https://oaxacacoffee.mx"
+    "website": "https://oaxacacoffee.mx",
+    "membership": "Gold",
+    "logo": "images/oaxacacoffelogo.jpg"
   },
   {
     "name": "Monte Albán Crafts",
@@ -18,7 +20,9 @@
     "sector": "Technology",
     "address": "Tecnológico #10, Oaxaca Centro",
     "phone": "+52 951 876 5432",
-    "website": "https://zapotecatech.mx"
+    "website": "https://zapotecatech.mx",
+    "membership": "Silver",
+    "logo": "images/zapotecalogo.jpg"
   },
   {
     "name": "Mezcal Real del Sur",
