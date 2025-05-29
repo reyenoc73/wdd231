@@ -46,12 +46,12 @@
     padding: 1rem;
   }
 
-  .hero-content h2 {
-    font-size: 1.25rem;
+  .hero-content h1 {
+    font-size: 1.rem;
   }
 
   .hero-content p {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
   }
 
   .cta-button {
@@ -70,4 +70,32 @@
   .footer-right {
     margin-bottom: 1rem;
   }
+  
+    .info-grid {
+        display: flex;  
+        flex-direction: column; /* Apila los cuadros en una sola columna */
+        align-items: center; /* Centra los elementos */
+        width: 100%; 
+        padding: 15px;
+    }
+
+    .info-box {
+        width: 80%; /* Ajusta el ancho para evitar bordes pegados */
+        margin-bottom: 15px; /* Espacio entre los cuadros */
+    }
+    .spotlight-grid {
+    display: flex;  
+        flex-direction: column; /* Apila los cuadros en una sola columna */
+        align-items: center; /* Centra los elementos */
+        width: 100%; 
+        padding: 15px;
+  }
+
 }
+
+
+ 
+
+
+
+ 

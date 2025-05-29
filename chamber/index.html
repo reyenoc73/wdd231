@@ -23,14 +23,15 @@
     <script defer src="scripts/weather.js"></script>
     <script defer src="scripts/spotlights.js"></script>
     <script defer src="scripts/footer.js"></script>
+    
 </head>
 
 <body>
   <header >
     <img src="images/oaxacamex1.jpg" alt="Chamber logo" class="logo-pic">
     <div class="header-content">        
-            <span class="name1">Chamber of Commerce of Oaxaca</span>
-            <span class="name2"></span>
+            <span class="name1">Alebrijes</span>
+            <span class="name2">Chamber of Commerce of Oaxaca</span>
             <button class="menu-toggle">☰</button>   
     </div>
    
@@ -53,23 +54,44 @@
         <a class="cta-button" href="join.html">Join the Chamber</a>
       </div>
     </section>
-    <section class="events">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li><strong>June 5:</strong> Small Business Networking Mixer</li>
-        <li><strong>June 12:</strong> Workshop: Digital Marketing for Local Shops</li>
-        <li><strong>June 20:</strong> Local Products Fair at Central Park</li>
-      </ul>
+    <section class="home">
+        <h2>Home</h2>
     </section>
-    <section class="weather">
-      <h2>Local Weather</h2>
-      <div id="weatherContainer"><p>Loading weather data...</p></div>
+    <section class="info-grid">
+        
+        <div class="info-box events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>June 5:</strong> Small Business Networking Mixer</li>
+                <li><strong>June 12:</strong> Workshop: Digital Marketing for Local Shops</li>
+                <li><strong>June 20:</strong> Local Products Fair at Central Park</li>
+            </ul>
+        </div>
+        
+        <div class="info-box weather">
+            <h2>Local Weather</h2>
+            <p id="weather-temp">Loading temperature...</p>
+            <p id="weather-desc">Loading description...</p>
+            <p id="weather-humidity">Loading humidity...</p>
+        </div>
+
+        <div class="info-box forecast">
+            <h2>3-Day Forecast</h2>
+            <ul id="forecast-list">
+                <li>Loading forecast...</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Spotlight Members -->
     <section class="spotlights">
-      <h2>Member Spotlights</h2>
-      <div id="spotlightContainer" class="grid"></div>
+        <h2>Members Spotlights</h2>
+        <label for="membershipFilter"><strong>Filter by Membership</strong></label>
+        <select id="membershipFilter">
+            <option value="all">All</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+        </select>
+        <div id="spotlightContainer" class="spotlight-grid"></div>
     </section>
   </main>
 

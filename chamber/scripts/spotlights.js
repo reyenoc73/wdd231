@@ -1,36 +1,57 @@
 document.addEventListener("DOMContentLoaded", () => {
   const spotlightContainer = document.getElementById("spotlightContainer");
+  const filterDropdown = document.getElementById("membershipFilter");
 
-  fetch("data/members.json")
-    .then(response => response.json())
-    .then(data => {
-      // Filter gold/silver members
-      const goldSilver = data.filter(member =>
+  let allMembers = [];
+
+  async function loadSpotlights() {
+    try {
+      const response = await fetch("data/members.json");
+      const members = await response.json();
+
+      // Keep only gold or silver members
+      allMembers = members.filter(member =>
         member.membership === "Gold" || member.membership === "Silver"
       );
 
-      // Shuffle and select 2 or 3 randomly
-      const selected = goldSilver.sort(() => 0.5 - Math.random()).slice(0, 3);
+      updateSpotlights("all");
+    } catch (error) {
+      console.error("Error loading spotlight members:", error);
+    }
+  }
 
-      // Display cards
-      selected.forEach(member => {
-        const card = document.createElement("div");
-        card.className = "empresa";
+  function updateSpotlights(filter) {
+    spotlightContainer.innerHTML = "";
 
-        card.innerHTML = `
-          <h3>${member.name}</h3>
-          <img src="${member.logo}" alt="${member.name} logo" style="width:100%; max-height:150px; object-fit:contain; margin:1rem 0;">
-          <p><strong>Phone:</strong> ${member.phone}</p>
-          <p><strong>Address:</strong> ${member.address}</p>
-          <p><strong>Membership:</strong> ${member.membership}</p>
-          <a href="${member.website}" target="_blank">${member.website}</a>
-        `;
+    let filtered = allMembers;
+    if (filter !== "all") {
+      filtered = allMembers.filter(member => member.membership === filter);
+    }
 
-        spotlightContainer.appendChild(card);
-      });
-    })
-    .catch(error => {
-      console.error("Error loading member data:", error);
-      spotlightContainer.innerHTML = "<p>Unable to load spotlight members.</p>";
+    // Shuffle and pick 2 or 3
+    filtered.sort(() => 0.5 - Math.random());
+    const selected = filtered.slice(0, 3);
+
+    selected.forEach(member => {
+      const card = document.createElement("div");
+      card.classList.add("spotlight-card");
+
+      card.innerHTML = `
+        <h3>${member.name}</h3>
+        <img src="${member.logo}" alt="Logo of ${member.name}" loading="lazy">
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
+        <p class="membership ${member.membership.toLowerCase()}">${member.membership} Member</p>
+      `;
+
+      spotlightContainer.appendChild(card);
     });
+  }
+
+  filterDropdown.addEventListener("change", () => {
+    updateSpotlights(filterDropdown.value);
+  });
+
+  loadSpotlights();
 });
