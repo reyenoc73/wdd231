@@ -80,18 +80,74 @@
       }
 
     .info-box {
-          width: 80%; /* Ajusta el ancho para evitar bordes pegados */
-          margin-bottom: 15px; /* Espacio entre los cuadros */
+        width: 80%; /* Ajusta el ancho para evitar bordes pegados */
+        margin-bottom: 15px; /* Espacio entre los cuadros */
       }
     .spotlight-grid {
-          display: flex;  
-          flex-direction: column; /* Apila los cuadros en una sola columna */
-          align-items: center; /* Centra los elementos */
-          width: 100%; 
-          padding: 15px;
+        display: flex;  
+        flex-direction: column; /* Apila los cuadros en una sola columna */
+        align-items: center; /* Centra los elementos */
+        width: 100%; 
+        padding: 15px;
+      }
+      .container {
+        grid-template-columns: 1fr;
+      }
+  
+    
+     
+      form {
+        width: 80%;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       }
 
+      form label {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        width: 95%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-top: 0.25rem;
+      }
+
+      form input[type="submit"] {
+        background-color: #7b7a7c;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 1rem;
+      }
+
+      form input[type="submit"]:hover {
+        background-color: #004d40;
+      }
+      .membership-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .modal-content {
+        margin-top: 30%;
+      }
 }
+
+     
+
+
 
 
  
