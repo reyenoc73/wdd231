@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"Join the Oaxaca Chamber – Membership Benefits"</title>
+  <meta name="description" content="Explore the official Oaxaca Chamber of Commerce Business Directory. Find trusted local businesses, services, and entrepreneurs driving economic growth in the region.">
+  <meta name="author" content="Enoc C. Reyes">
+  <meta property="og:title" content="Official Business Directory - Oaxaca Chamber of Commerce">
+  <meta property="og:description" content="Join the Oaxaca Chamber of Commerce and unlock exclusive business opportunities, networking events, and growth resources.">
+
+  <meta property="og:url" content="https://reyenoc73.github.io/wdd231/chamber/join.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  
+  <script defer src="scripts/localstorage.js"></script>
+  <script defer src="scripts/footer.js"></script>
+  <script src="scripts/togglemenu.js" defer></script>
+ 
+  <script src="scripts/discover.js"></script>
+</head>
+<body>
+    <header >
+        <img src="images/oaxacamex1.jpg" alt="Chamber logo" class="logo-pic">
+        <div class="header-content">   
+            <h1>Alebrijes</h1>    
+          
+            <span class="name2">Chamber of Commerce of Oaxaca</span>
+            <button class="menu-toggle">☰</button>   
+        </div>
+        <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>   
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explore & Connect: Your Guide to Oaxaca’s Business & Community</h2>
+        <div class="discover-grid">
+        <!-- Cards will be inserted dynamically here -->
+        </div>
+    </main>
+    <aside id="sidebar">   
+        <div id="visitMessage" class="visit-msg"></div>
+    </aside>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-left">
+        <p><strong>Chamber of Commerce of Oaxaca</strong></p>
+        <p>Av. Benito Juárez 456<br>Oaxaca de Juárez, Oaxaca 68000</p>
+        <p>info@camaradecomerciooaxaca.org<br>(951) 123-4567</p>
+        </div>
+
+        <div class="footer-center">
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+            <img src="icons/youtube.svg" alt="YouTube" class="social-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <img src="icons/twitter.svg" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        </div>
+
+        <div class="footer-right">
+        <p>WDD231 Class Project<br>Enoc C. Reyes</p>
+        <p>&copy; <span id="year"></span> Chamber of Commerce </p> 
+        <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </div>
+    </footer>    
+</body>
+</html>

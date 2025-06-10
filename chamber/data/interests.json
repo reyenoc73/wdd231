@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Oaxaca Cathedral",
+    "image": "images/oaxacacathedral.webp",
+    "address": "Av. Independencia s/n, Centro, Oaxaca",
+    "description": "A beautiful historic cathedral in the heart of the city."
+  },
+  {
+    "name": "Monte Albán Ruins",
+    "image": "images/montealban.webp",
+    "address": "Carretera a Monte Albán, Oaxaca",
+    "description": "Ancient Zapotec ruins with incredible views of the valley."
+  },
+  {
+    "name": "Benito Juárez Market",
+    "image": "images/market.webp",
+    "address": "Miguel Cabrera 120, Centro, Oaxaca",
+    "description": "A bustling market with local food, crafts, and textiles."
+  },
+  {
+    "name": "Hierve el Agua",
+    "image": "images/hierveelagua.webp",
+    "address": "San Lorenzo Albarradas, Oaxaca",
+    "description": "Natural rock formations and mineral springs resembling waterfalls."
+  },
+  {
+    "name": "Ethnobotanical Garden",
+    "image": "images/garden.webp",
+    "address": "Reforma s/n, Centro, Oaxaca",
+    "description": "A garden showcasing Oaxaca's rich plant diversity."
+  },
+  {
+    "name": "Tule Tree",
+    "image": "images/tule.webp",
+    "address": "Santa María del Tule, Oaxaca",
+    "description": "One of the widest trees in the world, over 2,000 years old."
+  },
+  {
+    "name": "Textile Museum of Oaxaca",
+    "image": "images/textilemuseum.webp",
+    "address": "Hidalgo 917, Centro, Oaxaca",
+    "description": "Museum dedicated to traditional and contemporary textiles."
+  },
+  {
+    "name": "Mitla Archaeological Site",
+    "image": "images/mitla.webp",
+    "address": "San Pablo Villa de Mitla, Oaxaca",
+    "description": "Pre-Columbian site with intricate stone mosaics and tombs."
+  }
+]
+

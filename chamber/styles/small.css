@@ -479,6 +479,49 @@ footer {
     .close:hover {
       color: #000;
     }
+    .discover-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  display: block;
+  border-radius: 8px; /* Optional: smooths the corners */
+}
+.visit-msg {
+  padding: 1em;
+  background-color: #eef6f6;
+  border-left: 4px solid #2a9d8f;
+  font-size: 1rem;
+  margin: 1em 0;
+  border-radius: 6px;
+}
+.card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+
   
     
 
