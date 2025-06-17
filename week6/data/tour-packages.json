@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Monte Albán Tour",
+    "description": "Explore the ancient Zapotec city with a certified local guide.",
+    "price": "$25",
+    "image": "images/montealban.webp"
+  },
+  {
+    "title": "Artisan Village Tour",
+    "description": "Visit the workshops of black pottery, alebrijes, and textiles.",
+    "price": "$35",
+    "image": "images/artisanvillagetour.webp"
+  },
+  {
+    "title": "Hierve el Agua Hike",
+    "description": "Enjoy a scenic hike to the petrified waterfalls and natural springs.",
+    "price": "$40",
+    "image": "images/hierveelagua.webp"
+  }
+]

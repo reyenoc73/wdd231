@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Mole Masterclass",
+    "description": "Learn to prepare authentic Oaxacan mole from scratch with local ingredients.",
+    "price": "$50",
+    "image": "images/mole-class.jpg"
+  },
+  {
+    "title": "Tlayuda Night",
+    "description": "Cook and enjoy the iconic Oaxacan tlayuda with a variety of toppings.",
+    "price": "$40",
+    "image": "images/tlayuda-night.jpg"
+  },
+  {
+    "title": "Market to Table",
+    "description": "Shop at a local market then prepare a full Oaxacan meal together.",
+    "price": "$60",
+    "image": "images/market-class.jpg"
+  }
+]

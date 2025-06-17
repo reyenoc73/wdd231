@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stay with welcoming locals during your Oaxaca visit.">
+  <title>Vive Oaxaca | Hosting</title>
+
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/small.css">
+
+  <script defer src="scripts/hoosting.js"></script>
+  <script defer src="scripts/footer.js"></script>
+  <script src="scripts/togglemenu.js" defer></script>
+
+</head>
+<body>
+   <header>
+    <img src="images/logo colibri.webp" alt="Vive Oaxaca logo" class="logo-pic">
+    <div class="header-content">        
+            <span class="name1">Vive Oaxaca</span>
+            <span class="name2">Culinary & Cultural Experiences</span>
+            <button class="menu-toggle">☰</button>   
+    </div>
+    <nav class="menu">  
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="cooking.html">Cooking Classes</a></li>
+        <li><a href="hosting.html">Hosting</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="actions">
+      <h2>Stay with a Local Host</h2>
+      <p>Experience true Oaxacan hospitality in comfortable and cultural accommodations.</p>
+      <div class="card-container" id="hosting-options"></div>
+    </section>
+
+    <form id="booking-form">
+      <label for="accommodation">Accommodation:</label>
+      <input type="text" id="accommodation" name="accommodation" readonly required>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="checkin">Check-in Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+      <button type="submit" class="book-btn">Book Now</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p><strong>Explore Oaxaca</strong></p>
+        <p><a href="tours.html">Local Tours</a> | <a href="cooking.html">Cooking Classes</a></p>
+      </div>
+
+      <div class="footer-center">
+        <p>Copyright&copy; <span id="year"></span> All rights reserved</p>
+        <p><strong>Oaxaca Cultural Experiences</strong></p>
+        <p><span id="current-date"></span></p>
+      </div>
+
+      <div class="footer-right">
+        <p><strong>Follow us:</strong></p>
+        <p>
+          <a href="https://www.instagram.com/" class="social-link instagram" aria-label="Instagram">
+            📷 Instagram
+          </a>
+          |
+          <a href="https://www.facebook.com/" class="social-link facebook" aria-label="Facebook">
+            📘 Facebook
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

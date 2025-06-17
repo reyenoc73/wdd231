@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Casa Xochitl",
+    "description": "Charming guest room near the city center with garden views.",
+    "price": "$35/night",
+    "image": "images/casaxochitl(1).webp"
+  },
+  {
+    "title": "La Abuela's Casita",
+    "description": "A warm, family-run guesthouse with breakfast included.",
+    "price": "$30/night",
+    "image": "images/abuelahouse.webp"
+  },
+  {
+    "title": "Rooftop Studio",
+    "description": "Private studio with terrace and mountain views in central Oaxaca.",
+    "price": "$45/night",
+    "image": "images/rooftstudio.webp"
+  }
+]
