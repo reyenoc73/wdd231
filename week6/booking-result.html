@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    .result {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #00704A;
+    }
+  </style>
+</head>
+<body>
+  <div class="result">
+    <h1>Booking Confirmed!</h1>
+    <p><strong>Accommodation:</strong> <span id="accommodation"></span></p>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Check-in:</strong> <span id="checkin"></span></p>
+    <p><strong>Check-out:</strong> <span id="checkout"></span></p>
+    <p><strong>Guests:</strong> <span id="guests"></span></p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('accommodation').textContent = params.get('accommodation')|| 'N/A' ;
+    document.getElementById('name').textContent = params.get('name') || 'N/A';
+    document.getElementById('email').textContent = params.get('email') || 'N/A';
+    document.getElementById('checkin').textContent = params.get('checkin') || 'N/A';
+    document.getElementById('checkout').textContent = params.get('checkout') || 'N/A';
+    document.getElementById('guests').textContent = params.get('guests') || 'N/A';
+  </script>
+</body>
+</html>
+

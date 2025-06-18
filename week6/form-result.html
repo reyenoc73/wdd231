@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submission Result</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script defer src="scripts/footer.js"></script>
+    <script src="scripts/togglemenu.js" defer></script>
+
+    <header>
+        <img src="images/logocolibri.webp" alt="Vive Oaxaca logo" loading="lazy" class="logo-pic">
+        <div class="header-content">        
+                <span class="name1">Vive Oaxaca</span>
+                <span>Culinary & Cultural Experiences</span>
+                <button class="menu-toggle">☰</button>   
+        </div>
+        <nav class="menu">  
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="cooking.html">Cooking Classes</a></li>
+            <li><a href="hosting.html">Hosting</a></li>  
+        </ul>
+        </nav>
+    </header>
+  <style>
+ 
+   
+  </style>
+</head>
+<body>
+  <div class="result">
+    <h1>Thank you for contacting us!</h1>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Message:</strong> <span id="message"></span></p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("name").textContent = params.get("name") || "Not provided";
+    document.getElementById("email").textContent = params.get("email") || "Not provided";
+    document.getElementById("message").textContent = params.get("message") || "Not provided";
+  </script>
+   
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p><strong>Explore Oaxaca</strong></p>
+        <p><a href="hosting.html">Hosting</a> | <a href="cooking.html">Cooking Classes</a></p>
+      </div>
+
+      <div class="footer-center">
+        <p>Copyright&copy; <span id="year"></span> All rights reserved</p>
+        <p><strong>Oaxaca Cultural Experiences</strong></p>
+        <p><span id="current-date"></span></p>
+      </div>
+
+      <div class="footer-right">
+        <p><strong>Follow us:</strong></p>
+        <p>
+          <a href="https://www.instagram.com/" class="social-link instagram" aria-label="Instagram">
+            📷 Instagram
+          </a>
+          |
+          <a href="https://www.facebook.com/" class="social-link facebook" aria-label="Facebook">
+            📘 Facebook
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

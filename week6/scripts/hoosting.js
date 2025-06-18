@@ -1,5 +1,5 @@
 
-   document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("hosting-options");
   const confirmation = document.getElementById("confirmation");
   const form = document.getElementById("booking-form");
@@ -28,7 +28,8 @@
         button.addEventListener("click", () => {
           const title = button.getAttribute("data-title");
           accommodationInput.value = title;
-          document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+          localStorage.setItem("selectedAccommodation", title);
+          document.getElementById("booking-form").scrollIntoView({ behavior: "smooth" });
         });
       });
     });
@@ -45,14 +46,28 @@
       const guests = form.guests.value;
       const accommodation = form.accommodation.value;
 
+      const bookingData = {
+        name,
+        email,
+        checkin,
+        checkout,
+        guests,
+        accommodation
+      };
+      localStorage.setItem("bookingInfo", JSON.stringify(bookingData));
+
       confirmation.innerHTML = `
-        ✅ Thank you, <strong>${name}</strong>!<br>
-        Your booking for <strong>${accommodation}</strong> from <strong>${checkin}</strong> to <strong>${checkout}</strong> 
-        for <strong>${guests}</strong> guest(s) has been received.<br>
-        A confirmation email will be sent to <strong>${email}</strong>.
+        <div class="card confirmation-box">
+          ✅ <strong>Thank you, ${name}!</strong><br>
+          Your booking for <strong>${accommodation}</strong><br>
+          From <strong>${checkin}</strong> to <strong>${checkout}</strong><br>
+          For <strong>${guests}</strong> guest(s)<br>
+          A confirmation email will be sent to <strong>${email}</strong>.
+        </div>
       `;
 
       form.reset();
+      window.scrollTo({ top: confirmation.offsetTop, behavior: 'smooth' });
     });
   }
 });

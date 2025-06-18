@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 1rem;
   }
@@ -14,7 +14,7 @@
         display: block;
         position: absolute;
         top: 0.1rem;
-        right: 1rem;
+        right: 2rem;
       }
     nav.menu {
         width: 100%;
@@ -56,6 +56,8 @@
 
   .contact-form {
     padding: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .form-group input,
@@ -88,6 +90,7 @@
   .footer-container {
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
 
   .footer-left,
