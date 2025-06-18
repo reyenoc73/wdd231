@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/small.css">
 
   <script defer src="scripts/cooking.js"></script>
+  <script defer src="scripts/tours.js"></script>
   <script defer src="scripts/footer.js"></script>
   <script src="scripts/togglemenu.js" defer></script>
 
@@ -27,8 +28,8 @@
         <li><a href="index.html" >Home</a></li>
         <li><a href="cooking.html">Cooking Classes</a></li>
         <li><a href="hosting.html">Hosting</a></li>
-        <li><a href="tours.html">Tours</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        
+      
       </ul>
     </nav>
   </header>
@@ -38,6 +39,42 @@
       <h2>Oaxacan Cooking Classes</h2>
       <p>Discover the secrets of traditional Oaxacan cuisine taught by passionate local chefs.</p>
       <div class="card-container" id="cooking-classes"></div>
+    </section>
+    <section id="actions">
+      <h2>Explore Oaxaca with Expert Guides</h2>
+      <p>From ancient ruins to artisan towns, discover the true essence of Oaxaca.</p>
+      <div class="card-container" id="tour-packages"></div>
+    </section>
+     
+    <section class="contact">
+      <div class="contact-text">
+        <h2>Contact Us</h2>
+        <p>Whether you're looking to book a cooking class, stay with us, or join a local tour — we're here to help you create unforgettable memories in Oaxaca.</p>
+        <p>Our team responds within 24 hours. Reach out with your questions, ideas, or special requests — we love to hear from fellow food and culture lovers!</p>
+        <div class="contact-images">
+          <img src="images/tour-experience.jpg" alt="Traditional Oaxacan dish" >
+          <img src="images/tour-mercado.jpg" alt="Oaxaca local market" >
+        </div>
+      </div>
+
+      <form class="contact-form" autocomplete="on">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required autocomplete="email" >
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" required autocomplete="off"></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
