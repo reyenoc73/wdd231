@@ -16,5 +16,17 @@
     "description": "Enjoy a scenic hike to the petrified waterfalls and natural springs.",
     "price": "$40",
     "image": "images/hierveelagua.webp"
+  },
+  {    
+    "title": "Sunset Mezcal & Music",
+    "description": "Relax with mezcal tastings and live traditional music at a rooftop terrace.",
+    "price": "$45 per person",
+    "image": "images/sunsetmezcal.webp"
+  },
+  {
+    "title": "Nature Photography Tour",
+    "description": "Explore natural beauty spots with a guide to help you capture stunning photos.",
+    "price": "$70 per person",
+    "image": "images/phototour.jpg"
   }
 ]

@@ -16,5 +16,18 @@
     "description": "Private studio with terrace and mountain views in central Oaxaca.",
     "price": "$45/night",
     "image": "images/rooftstudio.webp"
+  },
+  {
+    "title": "Casa Azul Retreat",
+    "description": "Cozy home with traditional decor and rooftop terrace.",
+    "price": "$75",
+    "image": "images/casaazul.webp"   
+  },
+  {
+    "title": "Rustic Villa",
+    "description": "Spacious villa with garden and stunning mountain views.",
+    "price": "$120",
+    "image": "images/rusticvilla.webp"  
   }
+
 ]

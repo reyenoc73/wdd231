@@ -8,8 +8,7 @@ body {
  
   max-width: 100%;
   overflow-x: hidden;
-}
-
+  }
 
 header {
     display: flex;
@@ -22,7 +21,6 @@ header {
     background-color: #5a2e0d;
     color:white; 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-
     }
 .header-content {
     display: flex;
@@ -80,23 +78,23 @@ nav {
     font-size: 3rem;
     cursor: pointer; 
     }
-
-
-
-  .heroup {
+.heroup {
     text-align: center;
     }
-  .hero {
+    .heroup h1 {
+      font-size: 1.5rem;
+    }
+.hero {
     position: relative;
     height: 80vh;
     overflow: hidden;
-  }
+    }
 .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
 
 .hero-text {
   position: absolute;
@@ -235,6 +233,17 @@ nav {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+}
+#actions h1{
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+#actions2 h2{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+#actions p, #actions2 p{
+  margin-left: 1rem;
 }
 .contact {
   display: grid;

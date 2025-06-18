@@ -3,7 +3,7 @@
     "title": "Mole Masterclass",
     "description": "Learn to prepare authentic Oaxacan mole from scratch with local ingredients.",
     "price": "$50",
-    "image": "images/mole-class.jpg"
+    "image": "images/cocinamole.webp"
   },
   {
     "title": "Tlayuda Night",
@@ -16,5 +16,17 @@
     "description": "Shop at a local market then prepare a full Oaxacan meal together.",
     "price": "$60",
     "image": "images/market-class.jpg"
+  },
+  {
+    "title": "Oaxacan Cooking Class",
+    "description": "Learn to cook traditional Oaxacan dishes with local chefs in a friendly, hands-on environment.",
+    "price": "$45 per person",
+    "image": "images/tamalescocina.webp"
+  },
+  {
+    "title": "Chocolate Making Workshop",
+    "description": "Discover the art of making traditional Mexican chocolate from bean to bar.",
+    "price": "$50 per person",
+    "image": "images/makingchocolate.jpg"
   }
 ]
