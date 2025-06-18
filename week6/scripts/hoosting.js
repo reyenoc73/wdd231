@@ -5,7 +5,7 @@
   const form = document.getElementById("booking-form");
   const accommodationInput = document.getElementById("accommodation");
 
-  // Load hosting options
+
   fetch("data/hosting-options.json")
     .then((res) => res.json())
     .then((data) => {
@@ -24,7 +24,6 @@
         container.appendChild(card);
       });
 
-      // Attach event listeners to "Book Now" buttons
       document.querySelectorAll(".book-btn").forEach((button) => {
         button.addEventListener("click", () => {
           const title = button.getAttribute("data-title");
@@ -34,7 +33,7 @@
       });
     });
 
-  // Handle form submission
+
   if (form) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
